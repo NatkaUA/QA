@@ -97,7 +97,7 @@ JSON
  } 
 
  19. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Вводим комментарий и нажимаем "Commit changes"
- 20. Синхронизировать внешний и локальный репозиторий JSON: в терминале вводим git fetch и git pull
+ 20. Синхронизировать внешний и локальный репозиторий JSON: в терминале вводим git fetch (желательно) и затем git pull
 
 
 
@@ -172,7 +172,7 @@ XML
  
      Сохраняем файл: Esc; :wq
 
- 32. Сделать коммит в одну строку: git commit -am "комментарий" 
+ 32. Сделать коммит в одну строку: git add . && git commit -am "комментарий" 
  33. Отправить сразу 2 файла на внешний репозиторий: git push
  34. На веб интерфейсе создать файл bug_report.xml: 
      На сайте GitHub в репозитории нажать "Add file", "Create new file" , указать имя "bug_report.xml", внизу заполнить поле комментарием "Commit new file"
@@ -203,7 +203,7 @@ XML
   <Expected_result> All fields accepts only valid values </Expected_result>
 </bug_report>
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Нжимаем "Commit changes"
- 38. Синхронизировать внешний и локальный репозиторий XML: в терминале вводим git fetch и затем git pull
+ 38. Синхронизировать внешний и локальный репозиторий XML: в терминале вводим git fetch (рекомендованно) и затем git pull
 
 
 
@@ -264,7 +264,7 @@ TXT
 	26. Методология разработки Scrum.
 	27. Python. (Изучение основ. Создание клиент серверного приложения)
      Выходим из редактора, сохранив изменения Esc; :wq
- 12. Сделать коммит в одну строку: git commit -am "комментарий"
+ 12. Сделать коммит в одну строку: git add . && git commit -am "комментарий"
  13. Отправить сразу 2 файла на внешний репозиторий: git push
  14. На веб интерфейсе создать файл bug_report.txt : 
      На сайте GitHub в репозитории нажать "Add file", "Create new file" , указать имя "bug_report.txt", внизу заполнить поле комментарием "Commit new file" 
@@ -289,6 +289,6 @@ TXT
 	Actual result: Invalid values can be recorded as user's name.The same issue observed in the Last name input field.
 	Expected result: All fields accepts only valid values.
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе:Нажимаем "Commit changes"
- 18. Синхронизировать внешний и локальный репозиторий TXT: В терминале вводим git fetch и затем git pull
+ 18. Синхронизировать внешний и локальный репозиторий TXT: В терминале вводим git fetch(рекомендованно) и затем git pull
 
 
