@@ -1,0 +1,294 @@
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON: На сайте GitHub, в своем профиле, в разделе "Репозитории" создаем новый репозиторий, нажав на кновку "New", вводим название "JSON", далее отмечам чек-бокс "Public" и "Add a README file", подтверждаем создание репозитория.
+ 5. Клонировать репозиторий JSON на локальный компьютер:В репозитории "JSON" нажимаем кнопку "Code" выбираем "HTTPS" и копируем ссылку, далее открываем терминал под гитом, вводим команду: git clone "ссылка гитхаба".
+ 6. Внутри локального JSON создать файл “new.json”: touch new.json 
+ 7. Добавить файл под гит: git add new.json
+ 8. Закоммитить файл: git commit -m "комментарий к файлу"
+ 9. Отправить файл на внешний GitHub репозиторий: git push
+10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON:
+    Открываем файл через текстовый редактор: vim new.json , нажимаем Insert(I) , вводим данные :
+
+   	{ 
+	"Name":"Natalia",
+	"Surname":"Nikolayenko",
+	"Age":29,
+	"Pets":0,
+	"Salary":"3000 $" 
+	}
+
+Сохраняем файл, Esc, :wq
+
+ 11. Отправить изменения на внешний репозиторий: git commit -am "комментарий", затем git push
+ 12. Создать файл preferences.json: touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON:
+     Открываем файл через текстовый редактор: vim preferences.json , нажимаем Insert(I) , вводим данные :
+     
+	{
+	"Movie":"Scent_of_a_woman",
+	"Series":"Peaky_Blinders",
+	"Food":"Eggs",
+	"Season":"Summer",
+	"Country":"Swiss"
+	}
+
+ Сохраняем файл, Esc, :wq
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON: touch sklls.json , затем
+     Открываем файл через текстовый редактор: vim skills.json , нажимаем Insert(I) , вводим данные :
+	{
+	"1": "Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC",
+        "2": "Что такое клиент серверная архитектура.",
+        "3": "Методы запросов на сервер",
+        "4": "Ответы сервера",
+        "5": "Структуры запросов и ответов",
+        "6": "Что такое JSON, XML. Их структура",
+        "7": "Тестирование API",
+        "8": "Снятие и чтение логов",
+        "9": "Postman, Fidler",
+        "10": "VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)",
+        "11": "Dev Tools веб браузеров (Google Chrome, FireFox)",
+        "12": "Мобильное тестирование",
+        "13": "Особенность iOS, Android, гайдлайны",
+        "14": "Сборка iOS приложений на XCode",
+        "15": "Сборка Android приложений на Android Studio",
+        "16": "Перехват мобильного трафика (сниффинг) через Charles",
+        "17": "Настройка прокси на iOS и Android",
+        "18": "Командная строка (terminal) Linux Ubuntu. Копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса",
+        "19": "Простой bash скриптринг , автоматизация рутинных задач на сервере",
+        "20": "Доступ к удалённым серверам",
+        "21": "Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join",
+        "22": "Git",
+        "23": "Jmeter",
+        "24": "Методология разработки Scrum",
+        "25": "Python. Создание собственного клиент-серверного приложения"
+	}
+
+Сохраняем файл, Esc, :wq
+     
+ 15. Отправить сразу 2 файла на внешний репозиторий: 1) git add . 2)git commit -am "комментарий" 3) git push
+ 16. На веб интерфейсе создать файл bug_report.json: На сайте GitHub в репозитории нажать "Add file", "Create new file" , указать имя "bug_report.json", внизу заполнить поле комментарием "Commit new file"
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Нажимаем "Commit new file"
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON: На сайте перейти в файл "bug_report.json", заполнить:
+ 	
+{
+  "ID":"SUPQA-377",
+  "Summary":"Invalid values can be recorded as user's name",
+  "Type":"Bug",
+  "Priority":"Major",
+  "Environment":"IPhone 7 Plus, IOS 14.6 App version: 1.4.105",
+  "Reporter":"Natalia Nikolayenko",
+  "Assignee":"Alla Ponomapenko",
+  "Preconditions":{"1":"Run the app",
+                   "2":"Sign in",
+                   "3":"Tap on Profile"},
+  "Steps to reproduce":{ "1":"Tap Edit Profile button",
+                         "2":"At First name field place invalid value ( special characters)",
+                         "3":"Tap Save changes",
+                         "4":"Review the changes"},
+  "Actual result":"Invalid values can be recorded as user's name.The same issue observed in the Last name input field.",
+  "Expected result":"All fields accepts only valid values."
+ } 
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Вводим комментарий и нажимаем "Commit changes"
+ 20. Синхронизировать внешний и локальный репозиторий JSON: в терминале вводим git fetch и git pull
+
+
+
+
+
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML: На сайте GitHub, в своем профиле, в разделе "Репозитории" создаем новый репозиторий, нажав на кновку "New", вводим название "XML", далее отмечам чек-бокс "Public" и "Add a README file", подтверждаем создание репозитория.
+ 22. Клонировать репозиторий XML на локальный компьютер: В репозитории "XML" нажимаем кнопку "Code" выбираем "HTTPS" и копируем ссылку, далее открываем терминал под гитом, вводим команду: git clone "ссылка гитхаба".
+ 23. Внутри локального XML создать файл “new.xml”: touch new.xml
+ 24. Добавить файл под гит: git add new.xml
+ 25. Закоммитить файл: git commit -m "комментарий"
+ 26. Отправить файл на внешний GitHub репозиторий: git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML:
+  Открываем файл через текстовый редактор: vim new.xml , нажимаем Insert(I) , вводим данные 
+	<?xml version="1.0" encoding="UTF-8"?>
+	<Info>
+	<Name> Natalia </Name>
+	<Surname> Nikolayenko </Surname>
+	<Age> 29 </Age>
+	<Pets> 0 </Pets>
+	<Salary> 3000$ </Salary>
+	</Info>
+     Сохраняем файл: Esc; :wq
+
+ 28. Отправить изменения на внешний репозиторий: git commit -am "комментарий", затем git push
+ 29. Создать файл preferences.xml : touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML:
+     Открываем файл через текстовый редактор: vim preferences.xml , нажимаем Insert(I) , вводим данные 
+	<?xml version="1.0" encoding="UTF-8"?>
+	<Info>
+	<Movie>Scent of a woman </Movie>
+	<Series> Peaky Blinders </Series>
+	<Food> Eggs </Food>
+	<Season> Summer </Season>
+	<Country> Swiss </Country>
+	</Info>
+    Сохраняем файл: Esc; :wq
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML: touch skills.xml
+     Открываем файл через текстовый редактор: vim skills.xml , нажимаем Insert(I) , вводим данные 
+	<?xml version="1.0" encoding="UTF-8"?>
+	<?xml version="1.0" encoding="UTF-8"?>
+	<Skills>
+	<N1> Базовая теория : Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования </N1>
+	<N2> Что такое клиент серверная архитектура </N2>
+	<N3> Методы запросов на сервер </N3>
+	<N4> Ответы сервера </N4>
+	<N5> Структуры запросов и ответов </N5>
+	<N6> Что такое JSON, XML. Их структура </N6>
+	<N7> Тестирование API </N7>
+	<N8> Снятие и чтение логов </N8>
+	<N9> Postman, Fidler </N9>
+	<N10> VPN. (Как работает, зачем нужен, как использовать, варианты инструментов) </N10>
+	<N11> Dev Tools веб браузеров (Google Chrome, FireFox) </N11>
+	<N12> Мобильное тестирование </N12>
+	<N13> Особенность iOS, Android, гайдлайны </N13>
+	<N14> Сборка iOS приложений на XCode </N14>
+	<N15> Сборка Android приложений на Android Studio </N15>
+	<N16> Перехват мобильного трафика (сниффинг) через Charles </N16>
+	<N17> Настройка прокси на iOS и Android </N17>
+	<N18> Командная строка (terminal) Linux Ubuntu. Копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейсf </N18>
+	<N19> Простой bash скриптринг , автоматизация рутинных задач на сервере </N19>
+	<N20> Доступ к удалённым серверам </N20>
+	<N21> Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join </N21>
+	<N22> "Git" </N22>
+	<N23> "Jmeter" </N23>
+	<N24> Методология разработки Scrum"</N24>
+	<N25> Python. Создание собственного клиент-серверного приложения </N25>
+	</Skills>
+ 
+     Сохраняем файл: Esc; :wq
+
+ 32. Сделать коммит в одну строку: git commit -am "комментарий" 
+ 33. Отправить сразу 2 файла на внешний репозиторий: git push
+ 34. На веб интерфейсе создать файл bug_report.xml: 
+     На сайте GitHub в репозитории нажать "Add file", "Create new file" , указать имя "bug_report.xml", внизу заполнить поле комментарием "Commit new file"
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Нажать "Commit new file"
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML:На сайте перейти в файл "bug_report.xml", заполнить:
+
+	<?xml version="1.0" encoding="UTF-8"?>
+<bug_report>
+  <ID> SUPQA-377 </ID>
+  <Summary> Invalid values can be recorded as user's name </Summary>
+  <Type> Bug </Type>
+  <Priority> Major </Priority>
+  <Environment> IPhone 7 Plus, IOS 14.6 App version: 1.4.105 </Environment>
+  <Reporter> Natalia Nikolayenko </Reporter>
+  <Assignee> Alla Ponomapenko </Assignee>
+  <Preconditions>
+                  <A> Run the app </A>
+                  <B> Sign in </B>
+                  <C> Tap on Profile </C>
+  </Preconditions>
+  <Steps_to_reproduce>
+                       <A> Tap Edit Profile button </A>
+                       <B> At First name field place invalid value ( special characters) </B>
+                       <C> Tap Save changes </C>
+                       <D> Review the changes </D> 
+</Steps_to_reproduce>
+  <Actual_result> Invalid values can be recorded as user's name. The same issue observed in the Last name input field </Actual_result>
+  <Expected_result> All fields accepts only valid values </Expected_result>
+</bug_report>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Нжимаем "Commit changes"
+ 38. Синхронизировать внешний и локальный репозиторий XML: в терминале вводим git fetch и затем git pull
+
+
+
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT: На сайте GitHub, в своем профиле, в разделе "Репозитории" создаем новый репозиторий, нажав на кновку "New", вводим название "TXT", далее отмечам чек-бокс "Public" и "Add a README file", подтверждаем создание репозитория.
+ 2. Клонировать репозиторий TXT на локальный компьютер: В репозитории "TXT" нажимаем кнопку "Code" выбираем "HTTPS" и копируем ссылку, далее открываем терминал под гитом, вводим команду: git clone "ссылка гитхаба".
+ 3. Внутри локального TXT создать файл “new.txt”: touch new.txt
+ 4. Добавить файл под гит: git add new.txt
+ 5. Закоммитить файл:  git commit -m "комментарий"
+ 6. Отправить файл на внешний GitHub репозиторий: git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT:
+    Открываем файл с помощью текстового редактора vim new.txt, вкл. режим редактирования Insert (I), вводим данные:
+	Name = Nikolayenko Natalia
+	Age = 29 y.o.
+	Pets = 0
+	Salary = 3000$
+    Выходим из редактора, сохранив изменения Esc; :wq
+ 8. Отправить изменения на внешний репозиторий: 1) git commit -am "комментарий" 2) git push
+ 9. Создать файл preferences.txt: touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT:
+     	Открываем файл с помощью текстового редактора vim preferences.txt, вкл. режим редактирования Insert (I), вводим данные:
+	Movie = "Scent of a woman"
+	Series = "Peaky Blinders"
+	Food = Eggs
+	Season = Summer
+	Country = Swiss
+     Выходим из редактора, сохранив изменения Esc; :wq
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT: touch skills.txt
+     Открываем файл с помощью текстового редактора vim skills.txt, вкл. режим редактирования Insert (I), вводим данные:
+     Программа курса:
+	1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC.
+	2. Что такое клиент-серверная архитектура.
+	3. HTTP Методы запросов на сервер.
+	4. Коды ответов HTTP сервера.
+	5. Структуры HTTP запросов и ответов.
+	6. Что такое JSON, XML. Их структура.
+	7. Тестирование API через Postman (JS, автотесты API).
+	8. Снятие и чтение логов c внешнего сервера.
+	9. Снифинг http web трафика через Charles и Fiddler.
+	10. Dev Tools веб браузеров (Google Chrome, FireFox).
+	11. VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)
+	12. Мобильное тестирование.
+	13. Особенность iOS, Android, гайдлайны.
+	14. Сборка iOS приложений на XCode. (У кого нет Mac компьютера, просто посмотрят)
+	15. Сборка Android приложений на Android Studio.
+	16. ADB (управление андройд девайсами).
+	17. Настройка прокси и vpn на iOS и Android.
+	18. Перехват (сниффинг) мобильного трафика через Charles и Fiddler на iOS и Android.
+	19. Командная строка (terminal) Linux (копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса)
+	20. Основы bash скриптинг, автоматизация рутинных задач на сервере.
+	21. Доступ к удалённым серверам.
+	22. Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join).
+	23. База данных Postgres (установка, настройка и использование).
+	24. Нереляционная база данных Redis (установка, настройка и использование).
+	25. Нагрузочное тестирование в Jmeter.
+	26. Методология разработки Scrum.
+	27. Python. (Изучение основ. Создание клиент серверного приложения)
+     Выходим из редактора, сохранив изменения Esc; :wq
+ 12. Сделать коммит в одну строку: git commit -am "комментарий"
+ 13. Отправить сразу 2 файла на внешний репозиторий: git push
+ 14. На веб интерфейсе создать файл bug_report.txt : 
+     На сайте GitHub в репозитории нажать "Add file", "Create new file" , указать имя "bug_report.txt", внизу заполнить поле комментарием "Commit new file" 
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Нажать "Commit new file"
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT:
+     На сайте перейти в файл "bug_report.txt", заполнить:
+	
+	ID: SUPQA-377
+	Summary: Invalid values can be recorded as user's name
+	Type: Bug
+	Priority: Major
+	Environment: IPhone 7 Plus, IOS 14.6 App version: 1.4.105
+	Reporter: Natalia Nikolayenko
+	Assignee: Alla Ponomapenko
+	Preconditions:   1. Run the app
+             		 2. Sign in
+             		 3. Tap on Profile
+	Steps to reproduce: 1. Tap Edit Profile button
+                   	 2. At First name field place invalid value ( special characters)
+                   	 3. Tap Save changes
+                   	 4. Review the changes
+	Actual result: Invalid values can be recorded as user's name.The same issue observed in the Last name input field.
+	Expected result: All fields accepts only valid values.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе:Нажимаем "Commit changes"
+ 18. Синхронизировать внешний и локальный репозиторий TXT: В терминале вводим git fetch и затем git pull
+
+
