@@ -203,7 +203,7 @@ XML
   <Expected_result> All fields accepts only valid values </Expected_result>
 </bug_report>
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Нжимаем "Commit changes"
- 38. Синхронизировать внешний и локальный репозиторий XML: в терминале вводим git fetch (рекомендованно) и затем git pull
+ 38. Синхронизировать внешний и локальный репозиторий XML: в терминале вводим git fetch (рекомендовано) и затем git pull
 
 
 
@@ -289,6 +289,6 @@ TXT
 	Actual result: Invalid values can be recorded as user's name.The same issue observed in the Last name input field.
 	Expected result: All fields accepts only valid values.
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе:Нажимаем "Commit changes"
- 18. Синхронизировать внешний и локальный репозиторий TXT: В терминале вводим git fetch(рекомендованно) и затем git pull
+ 18. Синхронизировать внешний и локальный репозиторий TXT: В терминале вводим git fetch(рекомендовано) и затем git pull
 
 
