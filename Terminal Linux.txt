@@ -49,3 +49,4 @@ Enter
 
 Чтобы запустить скрипт: bash myscript.sh 
 Дать права на исполнение файла: chmod a+x myscript.sh
+
