@@ -69,6 +69,36 @@ JSON
         "24": "Методология разработки Scrum",
         "25": "Python. Создание собственного клиент-серверного приложения"
 	}
+	
+Или Json со списком:
+{"Skills":[
+    	"1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC",
+        "2. Что такое клиент серверная архитектура.",
+        "3. Методы запросов на сервер",
+        "4. Ответы сервера",
+        "5. Структуры запросов и ответов",
+        "6. Что такое JSON, XML. Их структура",
+        "7. Тестирование API",
+        "8. Снятие и чтение логов",
+        "9. Postman, Fidler",
+        "10. VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)",
+        "11. Dev Tools веб браузеров (Google Chrome, FireFox)",
+        "12. Мобильное тестирование",
+        "13. Особенность iOS, Android, гайдлайны",
+        "14. Сборка iOS приложений на XCode",
+        "15. Сборка Android приложений на Android Studio",
+        "16. Перехват мобильного трафика (сниффинг) через Charles",
+        "17. Настройка прокси на iOS и Android",
+        "18. Командная строка (terminal) Linux Ubuntu. Копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса",
+        "19. Простой bash скриптринг , автоматизация рутинных задач на сервере",
+        "20. Доступ к удалённым серверам",
+        "21. Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join)",
+        "22. Git",
+        "23. Jmeter",
+        "24. Методология разработки Scrum",
+        "25. Python. Создание собственного клиент-серверного приложения"
+	]
+}
 
 Сохраняем файл, Esc, :wq
      
@@ -95,6 +125,26 @@ JSON
   "Actual result":"Invalid values can be recorded as user's name.The same issue observed in the Last name input field.",
   "Expected result":"All fields accepts only valid values."
  } 
+ или Json co списком:
+ 
+ {
+  "ID":"SUPQA-377",
+  "Summary":"Invalid values can be recorded as user's name",
+  "Type":"Bug",
+  "Priority":"Major",
+  "Environment":"IPhone 7 Plus, IOS 14.6 App version: 1.4.105",
+  "Reporter":"Natalia Nikolayenko",
+  "Assignee":"Alla Ponomapenko",
+  "Preconditions": [ "1. Run the app",
+                     "2. Sign in",
+                     "3. Tap on Profile"],
+  "Steps to reproduce":["1. Tap Edit Profile button",
+                        "2. At First name field place invalid value ( special characters)",
+                        "3. Tap Save changes",
+                        "4. Review the changes"],
+  "Actual result":"Invalid values can be recorded as user's name.The same issue observed in the Last name input field.",
+  "Expected result":"All fields accepts only valid values."
+}
 
  19. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Вводим комментарий и нажимаем "Commit changes"
  20. Синхронизировать внешний и локальный репозиторий JSON: в терминале вводим git fetch (желательно) и затем git pull
