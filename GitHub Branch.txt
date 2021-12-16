@@ -17,6 +17,7 @@ Git Hub
 	git push -u origin SQL
 	git push -u origin Charles
 	git push -u origin Mobile_testing
+Можно использовать : git push origin --all
 3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта:
 	Перепрфгнуть в ветку: git checkout Bug_Reports 
 	Создать файл: touch Structure_of_Bug_Reports.txt
