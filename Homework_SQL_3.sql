@@ -290,3 +290,4 @@ left join employee_salary ES on ES.employee_id =E.id
 left join salary S on S.id =ES.salary_id 
 where S.monthly_salary in (1100, 1500, 2000)
 order by S.monthly_salary asc;
+
